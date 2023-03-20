@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F9CA101-088C-46BF-BF27-2A10D239A92E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>lugaru</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;AL_LIBTYPE_STATIC;FREEGLUT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libpng\include;..\libjpeg\include;..\openal\include;..\vorbis\include;..\vorbisfile\include;..\ogg\include;..\SDL2\include;..\libjsoncpp\include;..\dirent\include;C:\lugaru2\lugaru\freeglut-34\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libd\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGl32.lib;libfreeglut.lib;libjpeg.lib;libjsoncpp.lib;libogg.lib;libopenal.lib;libvorbis.lib;libvorbisfile.lib;libpng.lib;libzlib.lib;SDL2.lib;SDL2main.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;AL_LIBTYPE_STATIC;FREEGLUT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libpng\include;..\libjpeg\include;..\openal\include;..\vorbis\include;..\vorbisfile\include;..\ogg\include;..\SDL2\include;..\libjsoncpp\include;..\dirent\include;C:\lugaru2\lugaru\freeglut-34\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libd\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGl32.lib;libfreeglut.lib;libjpeg.lib;libjsoncpp.lib;libogg.lib;libopenal.lib;libvorbis.lib;libvorbisfile.lib;libpng.lib;libzlib.lib;SDL2.lib;SDL2main.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;AL_LIBTYPE_STATIC;FREEGLUT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libpng\include;..\libjpeg\include;..\openal\include;..\vorbis\include;..\vorbisfile\include;..\ogg\include;..\SDL2\include;..\libjsoncpp\include;..\dirent\include;C:\lugaru2\lugaru\freeglut-34\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGl32.lib;libfreeglut.lib;libjpeg.lib;libjsoncpp.lib;libogg.lib;libopenal.lib;libvorbis.lib;libvorbisfile.lib;libpng.lib;libzlib.lib;SDL2.lib;SDL2main.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;AL_LIBTYPE_STATIC;FREEGLUT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libpng\include;..\libjpeg\include;..\openal\include;..\vorbis\include;..\vorbisfile\include;..\ogg\include;..\SDL2\include;..\libjsoncpp\include;..\dirent\include;C:\lugaru2\lugaru\freeglut-34\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGl32.lib;libfreeglut.lib;libjpeg.lib;libjsoncpp.lib;libogg.lib;libopenal.lib;libvorbis.lib;libvorbisfile.lib;libpng.lib;libzlib.lib;SDL2.lib;SDL2main.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation\Animation.cpp" />
+    <ClCompile Include="Animation\Joint.cpp" />
+    <ClCompile Include="Animation\Muscle.cpp" />
+    <ClCompile Include="Animation\Skeleton.cpp" />
+    <ClCompile Include="Audio\openal_wrapper.cpp" />
+    <ClCompile Include="Audio\Sounds.cpp" />
+    <ClCompile Include="Devtools\ConsoleCmds.cpp" />
+    <ClCompile Include="Environment\Lights.cpp" />
+    <ClCompile Include="Environment\Skybox.cpp" />
+    <ClCompile Include="Environment\Terrain.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameDraw.cpp" />
+    <ClCompile Include="GameInitDispose.cpp" />
+    <ClCompile Include="GameTick.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="Graphic\Decal.cpp" />
+    <ClCompile Include="Graphic\Models.cpp" />
+    <ClCompile Include="Graphic\Sprite.cpp" />
+    <ClCompile Include="Graphic\Stereo.cpp" />
+    <ClCompile Include="Graphic\Text.cpp" />
+    <ClCompile Include="Graphic\Texture.cpp" />
+    <ClCompile Include="Level\Awards.cpp" />
+    <ClCompile Include="Level\Campaign.cpp" />
+    <ClCompile Include="Level\Dialog.cpp" />
+    <ClCompile Include="Level\Hotspot.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math\Frustum.cpp" />
+    <ClCompile Include="Math\XYZ.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Objects\Object.cpp" />
+    <ClCompile Include="Objects\Person.cpp" />
+    <ClCompile Include="Objects\PersonType.cpp" />
+    <ClCompile Include="Objects\Weapons.cpp" />
+    <ClCompile Include="Platform\PlatformUnix.cpp" />
+    <ClCompile Include="Platform\PlatformWindows.cpp" />
+    <ClCompile Include="Tutorial.cpp" />
+    <ClCompile Include="User\Account.cpp" />
+    <ClCompile Include="User\Settings.cpp" />
+    <ClCompile Include="Utils\Folders.cpp" />
+    <ClCompile Include="Utils\ImageIO.cpp" />
+    <ClCompile Include="Utils\Input.cpp" />
+    <ClCompile Include="Utils\pack.c" />
+    <ClCompile Include="Utils\private.c" />
+    <ClCompile Include="Utils\unpack.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation\Animation.hpp" />
+    <ClInclude Include="Animation\Joint.hpp" />
+    <ClInclude Include="Animation\Muscle.hpp" />
+    <ClInclude Include="Animation\Skeleton.hpp" />
+    <ClInclude Include="Audio\openal_wrapper.hpp" />
+    <ClInclude Include="Audio\Sounds.hpp" />
+    <ClInclude Include="Devtools\ConsoleCmds.hpp" />
+    <ClInclude Include="Environment\Lights.hpp" />
+    <ClInclude Include="Environment\Skybox.hpp" />
+    <ClInclude Include="Environment\Terrain.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="Graphic\Decal.hpp" />
+    <ClInclude Include="Graphic\gamegl.hpp" />
+    <ClInclude Include="Graphic\Models.hpp" />
+    <ClInclude Include="Graphic\Sprite.hpp" />
+    <ClInclude Include="Graphic\Stereo.hpp" />
+    <ClInclude Include="Graphic\Text.hpp" />
+    <ClInclude Include="Graphic\Texture.hpp" />
+    <ClInclude Include="Level\Awards.hpp" />
+    <ClInclude Include="Level\Campaign.hpp" />
+    <ClInclude Include="Level\Dialog.hpp" />
+    <ClInclude Include="Level\Hotspot.hpp" />
+    <ClInclude Include="Math\Frustum.hpp" />
+    <ClInclude Include="Math\Random.hpp" />
+    <ClInclude Include="Math\XYZ.hpp" />
+    <ClInclude Include="Menu\Menu.hpp" />
+    <ClInclude Include="Objects\Object.hpp" />
+    <ClInclude Include="Objects\Person.hpp" />
+    <ClInclude Include="Objects\PersonType.hpp" />
+    <ClInclude Include="Objects\Weapons.hpp" />
+    <ClInclude Include="Platform\Platform.hpp" />
+    <ClInclude Include="Thirdparty\optionparser.h" />
+    <ClInclude Include="Tutorial.hpp" />
+    <ClInclude Include="User\Account.hpp" />
+    <ClInclude Include="User\Settings.hpp" />
+    <ClInclude Include="Utils\binio.h" />
+    <ClInclude Include="Utils\Folders.hpp" />
+    <ClInclude Include="Utils\ImageIO.hpp" />
+    <ClInclude Include="Utils\Input.hpp" />
+    <ClInclude Include="Utils\private.h" />
+    <ClInclude Include="Version.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
