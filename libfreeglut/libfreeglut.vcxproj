@@ -59,6 +59,13 @@
     <ClCompile Include="src\mswin\fg_window_mswin.c" />
     <ClCompile Include="src\util\xparsegeometry_repl.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\GL\freeglut.h" />
+    <ClInclude Include="include\GL\freeglut_ext.h" />
+    <ClInclude Include="include\GL\freeglut_std.h" />
+    <ClInclude Include="include\GL\freeglut_ucall.h" />
+    <ClInclude Include="include\GL\glut.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{AD2A9583-A590-4474-B5F8-D2D0754F8C25}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
