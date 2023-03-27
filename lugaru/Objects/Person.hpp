@@ -356,10 +356,6 @@ public:
     bool isStop() { return animation_bits[animTarget] & ab_stop; }
     int getStop();
 
-    bool wasSneak();
-    bool isSneak();
-    int getSneak();
-
     bool wasRun() { return animation_bits[animCurrent] & ab_run; }
     bool isRun() { return animation_bits[animTarget] & ab_run; }
     int getRun();
