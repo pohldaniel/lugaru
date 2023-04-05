@@ -55,12 +55,6 @@ along with Lugaru.  If not, see <http://www.gnu.org/licenses/>.
 using namespace std;
 using namespace Game;
 
-// Added more evilness needed for MSVC
-#ifdef _MSC_VER
-#define strncasecmp(s1, s2, n) _strnicmp(s1, s2, n)
-#define snprintf(buf, size, format, ...) _sprintf_p(buf, size, format)
-#endif
-
 extern float multiplier;
 extern XYZ viewer;
 extern int environment;
